@@ -7,28 +7,15 @@
 
 Ever needed a graceful way to say “no”?  
 This tiny API returns random, generic, creative, and sometimes hilarious rejection reasons — perfectly suited for any scenario: personal, professional, student life, dev life, or just because.
+And now its even available in **German**!
 
 Built for humans, excuses, and humor.
-
-<!-- GitAds Sponsorship Badge -->
-<p align="center">
-  <a href="https://docs.gitads.dev/">
-    <img src="https://gitads.dev/assets/images/sponsor/camos/camo-3.png" alt="Sponsored by GitAds" />
-  </a>
-</p>
-
-<p align="center">
-  This project is <strong>sponsored by <a href="https://docs.gitads.dev/docs/getting-started/publishers">GitAds</a></strong>.<br>
-  You can get your GitHub repository sponsored too — <a href="https://docs.gitads.dev/docs/getting-started/publishers">create your account now</a>.
-</p>
-
----
 
 ## 🚀 API Usage
 
 **Base URL**
 ```
-https://naas.isalman.dev/no
+https://naas.spaghetti.wtf
 ```
 
 **Method:** `GET`  
@@ -36,13 +23,16 @@ https://naas.isalman.dev/no
 
 ### 🔄 Example Request
 ```http
-GET /no
+GET /no (for englisch rejections)
+```
+```
+GET /nein (for german rejections)
 ```
 
 ### ✅ Example Response
 ```json
 {
-  "reason": "This feels like something Future Me would yell at Present Me for agreeing to."
+   "reason":"Es ist gegen meine persönliche Religion, heute irgendetwas Nützliches zu tun."
 }
 ```
 
@@ -88,6 +78,7 @@ PORT=5000 npm start
 no-as-service/
 ├── index.js            # Express API
 ├── reasons.json        # 1000+ universal rejection reasons
+├── reasons_de.json     # 1000+ universal german rejection reasons
 ├── package.json
 ├── .devcontainer.json  # VS Code / Github devcontainer setup
 └── README.md
@@ -102,13 +93,13 @@ For reference, here’s the package config:
 ```json
 {
   "name": "no-as-service",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A lightweight API that returns random rejection or no reasons.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "hotheadhacker",
+  "author": "hotheadhacker and mmaxx45",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
@@ -161,7 +152,7 @@ Here are some projects and websites that creatively integrate [no-as-a-service](
 
 ## 👤 Author
 
-Created with creative stubbornness by [hotheadhacker](https://github.com/hotheadhacker)
+Created with creative stubbornness by [hotheadhacker](https://github.com/hotheadhacker) and a german version added by [mmaxx45](https://github.com/mmaxx45)
 
 ---
 
