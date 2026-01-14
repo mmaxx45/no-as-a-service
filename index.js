@@ -32,8 +32,8 @@ app.get('/no', (req, res) => {
 
 // Random rejection reason endpoint
 app.get('/nein', (req, res) => {
-  const reason_de = reasons_de[Math.floor(Math.random() * reasons_de.length)];
-  res.json({ reason_de });
+  const reason = reasons_de[Math.floor(Math.random() * reasons_de.length)];
+  res.json({ reason });
 });
 
 // Start server
