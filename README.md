@@ -11,6 +11,10 @@ And now its even available in **German**!
 
 Built for humans, excuses, and humor.
 
+## 🌍 Available Languages
+
+[![English](https://img.shields.io/badge/Language-English-blue?style=flat-square)](#) [![German](https://img.shields.io/badge/Language-Deutsch-red?style=flat-square)](#)
+
 ## 🚀 API Usage
 
 **Base URL**
